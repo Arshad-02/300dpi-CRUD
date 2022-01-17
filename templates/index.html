@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% include "header.html"%}
+
+{% block title %} Home {% endblock %}
+
+{% block body %} 
+<div class = "container">
+    <div class = "row">
+        <div class = "col md-12">
+            <div class = "jumbotron p-3">
+                <h2>Manage <b>Student</b> <button type = "button" class = "btn btn-success float-right" data-toggle = "modal" data-target = "#mymodal">Add</button></h2>
+
+            <table class = "table table-hover table-dark">
+                <tr>
+                    <th>Serial no</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Times borrowed</th>
+                    <th>In stock</th>
+                    <th>options</th>
+                    <th>    </th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>test</td>
+                    <td>12e4</td>
+                    <td>action</td>
+                    <td>hello</td>
+                    <td>world</td>
+                    <td>yes</td>
+                    <td>
+                        <a href="" class = "btn btn-warning btn-xs" data-toggle="modal"
+                        data-target="#modaledit">edit</a>
+                    </td>
+                    <td>
+                        <a href="" class = "btn btn-warning btn-xs" data-toggle="modal"
+                        data-target="#modaledit">delete</a>
+                    </td>
+                </tr>
+            </table>                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
